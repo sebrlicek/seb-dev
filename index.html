@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="cs"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Sebrlicek — tvořím weby, aplikace a digitální projekty.">
+  <title>Sebrlicek — weby a digitální projekty</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/sebrlicek-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./hero.css">
+</head><body>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="nav-wrap" id="top">
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a class="brand" href="#uvod" aria-label="Sebrlicek – úvod">
+        <img class="brand-logo" src="./assets/sebrlicek-logo.png" alt="Sebrlicek" width="560" height="109">
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#projekty">Projekty</a>
+        <a href="#omne">O mně</a>
+        <button class="nav-contact" type="button" data-open-contact="">Kontakt</button>
+      </div>
+
+      <button class="menu" id="menu" type="button" aria-label="Otevřít menu" aria-controls="nav-links" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="obsah">
+    <section class="hero" id="uvod">
+      <video class="hero-video" autoplay="" muted="" loop="" playsinline="" preload="metadata" poster="./assets/hero-coding-poster.jpg" disablepictureinpicture="" aria-hidden="true">
+        <source src="./assets/hero-coding.mp4?v=3" type="video/mp4">
+      </video>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow light"><span>01</span> Weby • aplikace • digitální tvorba</p>
+          <h1>Tvořím věci,<br>které <em>fungují.</em></h1>
+          <p class="lead">Od prvního nápadu po hotový projekt. Jednoduše, přehledně a s důrazem na každý detail.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#projekty">Prohlédnout projekt <span aria-hidden="true">↘</span></a>
+            <button class="text-link" type="button" data-open-contact="">Napsat mi <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll" href="#projekty" aria-label="Přejít na projekt">SCROLL <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div>WEB DESIGN&nbsp; / &nbsp;APLIKACE&nbsp; / &nbsp;UI &amp; UX&nbsp; / &nbsp;VIDEO&nbsp; / &nbsp;NÁPADY, KTERÉ FUNGUJÍ&nbsp; / &nbsp;</div>
+    </div>
+
+    <section class="projects section" id="projekty">
+      <div class="section-kicker reveal"><span>02</span><span>Vybrané projekty</span></div>
+      <div class="section-head reveal">
+        <h2>Rozvrh<span>+</span></h2>
+        <p>Moderní školní organizér, který spojuje rozvrh, úkoly, zkoušky a poznámky na jednom místě.</p>
+      </div>
+
+      <a class="project-card reveal" href="https://rozvrh-plus.sebrlicek.cz/" target="_blank" rel="noopener noreferrer" aria-label="Otevřít projekt Rozvrh+ v novém okně">
+        <div class="project-preview" aria-hidden="true">
+          <div class="preview-window">
+            <div class="preview-bar">
+              <span></span><span></span><span></span>
+              <i>rozvrh-plus.sebrlicek.cz</i>
+            </div>
+            <div class="preview-body">
+              <div class="preview-side"><b>R+</b><span></span><span></span><span></span><span></span></div>
+              <div class="preview-content">
+                <div class="preview-title"><b>Dnešní rozvrh</b><i>Pondělí</i></div>
+                <div class="preview-grid">
+                  <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="project-index">01 / 01</span>
+        </div>
+        <div class="project-meta">
+          <div><span>Školní aplikace</span><strong>Rozvrh+</strong></div>
+          <p>Navštívit projekt <span aria-hidden="true">↗</span></p>
+        </div>
+      </a>
+
+    </section>
+
+    <section class="about" id="omne">
+      <div class="about-inner section">
+        <div class="section-kicker inverse reveal"><span>03</span><span>O mně</span></div>
+        <div class="about-grid">
+          <h2 class="reveal">Nápad měním<br>v <em>realitu.</em></h2>
+          <div class="about-copy reveal">
+            <p>Jsem Sebrlicek, tvůrce a programátor. Baví mě moderní technologie, grafika a video. Nejraději tvořím věci, které se snadno používají a zároveň dobře vypadají.</p>
+            <div class="skills" aria-label="Dovednosti">
+              <span>Webdesign</span>
+              <span>Vývoj aplikací</span>
+              <span>UI / UX</span>
+              <span>Video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt">
+      <div class="section-kicker reveal"><span>04</span><span>Kontakt</span></div>
+      <div class="contact-grid">
+        <h2 class="reveal">Máš nápad?<br><em>Napiš mi.</em></h2>
+        <div class="contact-side reveal">
+          <p>Chceš vytvořit web, aplikaci nebo jiný digitální projekt? Ozvi se a probereme, co má vzniknout.</p>
+          <button class="button button-dark" type="button" data-open-contact="">Napsat zprávu <span aria-hidden="true">↗</span></button>
+          <a href="mailto:petr.sebrle@sebrlicek.cz">petr.sebrle@sebrlicek.cz</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#uvod" aria-label="Sebrlicek – nahoru"><img class="brand-logo" src="./assets/sebrlicek-logo.png" alt="Sebrlicek" width="560" height="109"></a>
+    <p>© <span id="year">2026</span> Sebrlicek</p>
+    <a href="#uvod">Nahoru <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <div class="modal" id="contact-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-contact=""></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <button class="modal-close" type="button" data-close-contact="" aria-label="Zavřít formulář">×</button>
+      <p class="modal-number">04 / KONTAKT</p>
+      <h2 id="contact-title">Napiš mi</h2>
+      <form class="contact-form" id="contact-form">
+        <label>Jméno a příjmení<input name="name" autocomplete="name" required=""></label>
+        <label>Telefonní číslo<input name="phone" type="tel" autocomplete="tel" required=""></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required=""></label>
+        <label>Zpráva<textarea name="message" rows="5" required=""></textarea></label>
+        <button class="button button-dark" type="submit">Odeslat zprávu <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="./hero-video.js"></script>
+
+
+</body></html>

@@ -1,0 +1,154 @@
+.hero {
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: #050505;
+  color: #ffffff;
+}
+
+.hero-video {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1) contrast(1.16) brightness(.72);
+}
+
+.hero-shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, .88) 0%, rgba(0, 0, 0, .56) 50%, rgba(0, 0, 0, .22) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, .84) 0%, transparent 55%, rgba(0, 0, 0, .25) 100%);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(var(--page), calc(100% - 8vw));
+  margin: 0 auto;
+  padding: 175px 0 105px;
+}
+
+.hero-copy { max-width: 1040px; }
+
+.eyebrow {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #bdbdbd;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.eyebrow span {
+  width: 38px;
+  padding-right: 14px;
+  border-right: 1px solid #777;
+  color: #ffffff;
+}
+
+.hero h1 {
+  max-width: 1000px;
+  margin: 30px 0 34px;
+  font-size: clamp(4.25rem, 9.3vw, 9rem);
+  line-height: .85;
+  letter-spacing: -.08em;
+}
+
+.hero h1 em {
+  color: transparent;
+  font-style: normal;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.lead {
+  max-width: 630px;
+  margin: 0;
+  color: #d4d4d4;
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.75;
+}
+
+.hero-actions {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.button-light { background: #ffffff; color: #050505; }
+.button-light:hover { background: #dedede; }
+
+.text-link {
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .55);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.text-link span { display: inline-block; margin-left: 13px; transition: transform .2s ease; }
+.text-link:hover span { transform: translate(3px, -3px); }
+
+.scroll {
+  position: absolute;
+  z-index: 2;
+  right: 4vw;
+  bottom: 35px;
+  color: #c8c8c8;
+  text-decoration: none;
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.scroll span { margin-left: 12px; color: #ffffff; }
+
+.ticker {
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff;
+  background: #050505;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.ticker div {
+  width: max-content;
+  padding: 18px 0;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  animation: ticker 24s linear infinite;
+}
+
+.ticker div::after { content: "WEB DESIGN / APLIKACE / UI & UX / VIDEO / NÁPADY, KTERÉ FUNGUJÍ / "; }
+
+@keyframes ticker { to { transform: translateX(-50%); } }
+
+@media (max-width: 860px) {
+  .hero { min-height: 94svh; }
+  .hero-inner { width: calc(100% - 40px); padding: 150px 0 78px; }
+  .hero-video { object-position: 62% center; }
+  .hero-shade { background: linear-gradient(0deg, rgba(0, 0, 0, .94) 0%, rgba(0, 0, 0, .64) 67%, rgba(0, 0, 0, .34) 100%); }
+  .scroll { display: none; }
+}
+
+@media (max-width: 560px) {
+  .hero h1 { margin-top: 25px; font-size: clamp(3.6rem, 18vw, 5rem); }
+  .hero-actions { align-items: stretch; flex-direction: column; gap: 16px; }
+  .hero-actions .button { width: 100%; }
+  .text-link { align-self: center; }
+  .eyebrow { line-height: 1.5; }
+}
